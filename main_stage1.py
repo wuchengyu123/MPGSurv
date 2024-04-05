@@ -39,13 +39,6 @@ for seed in random_seeds:
     print(f'random seed:{seed}')
     print('-'*20)
 
-    X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2,random_state=seed)
-    train = pd.concat([y_train,X_train],axis=1)
-    test = pd.concat([y_test,X_test],axis=1)
-
-    train_data = pd.DataFrame(train.values,columns=train.columns)
-    test_data = pd.DataFrame(test.values,columns=test.columns)
-
     train_set= CustomDataSet(
             csv_data=train_data,
             csv_data_col_names=csv_data_col_names,
@@ -55,7 +48,7 @@ for seed in random_seeds:
             )
 
     valid_set = CustomDataSet(
-        csv_data=test_data,
+        csv_data=valid_data,
         csv_data_col_names=csv_data_col_names,
         t_ct_dataset_path=t_image_path,
         n_ct_dataset_path=n_image_path,
