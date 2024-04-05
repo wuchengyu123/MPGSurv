@@ -16,9 +16,9 @@
   
 ``conda env create -f environment.yml``
 
-## Proposed Model
+## Training and Evaluation
 
-The code of proposed MPGSurv model can be seen in  ``/model``.
+The training and evaluation code can be overviewed in  ``main.py``. The code of proposed MPGSurv model can be seen in  ``/models``.
 
 ## Dataset
 
