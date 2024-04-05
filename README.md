@@ -1,4 +1,4 @@
-## MMFusion: Multi-modality Diffusion Model for Lymph Node Metastasis Diagnosis in Esophageal Cancer
+## A Novel Multi-modal Population-graph based Framework for Patients of Esophageal Squamous Cell Cancer Prognostic Risk Prediction
 
 ## A Quick Overview 
 
@@ -22,9 +22,9 @@ The training and evaluation code can be overviewed in  ``main.py``. The code of 
 
 ## Dataset
 
-Due to ethical review and privacy concerns related to the patients from whom the dataset was collected, the authors have no rights to make the dataset publicly available. Currently, you can use your own multimodal dataset to run the code. The data types and requirements can be set according to ``/dataloader/Dataset.py``.
+we apologize that we do not have the right to disclose the datasets collected by the hospital. Due to ethical review and patient privacy disclosure restrictions, we are unable to request public disclosure of the dataset at this time. In addition, future work will be based on this dataset and it is not appropriate to disclose the dataset at this time. The data types and requirements can be set according to ``/dataloader/Dataset.py``.
 
 
 ## Acknowlegment
 
-Our repo is developed based on the these projects: [CARD](https://github.com/XzwHan/CARD), [DiffMIC](https://github.com/scott-yjyang/DiffMIC)
+Our repo is developed based on the these projects: [MMMNA-Net](https://github.com/TangWen920812/mmmna-net), [GraphSAGE](https://github.com/twjiang/graphSAGE-pytorch)
