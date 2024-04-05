@@ -8,9 +8,9 @@
 ## Setup
 ### Requirements
 * Linux (tested on Ubuntu 16.04, 18.04, 20.04)
-* Python 3.6+
+* Python 3.7+
 * PyTorch 1.6 or higher (tested on PyTorch 1.13.1)
-* CUDA 11.3 or higher (tested on CUDA 11.6+torch-geometric 2.2.0)
+* CUDA 11.3 or higher (tested on CUDA 11.6)
 
 ### Installation
   
