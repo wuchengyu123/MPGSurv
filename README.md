@@ -18,7 +18,7 @@
 
 ## Proposed Model
 
-The code of proposed model can be seen in  ``/model``.
+The code of proposed MPGSurv model can be seen in  ``/model``.
 
 ## Dataset
 
