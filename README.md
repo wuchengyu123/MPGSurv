@@ -2,7 +2,7 @@
 
 ## A Quick Overview 
 
-<img width="600" height="350" src="https://github.com/wuchengyu123/MPGSurv/framework.png">
+<img width="600" height="350" src="https://github.com/wuchengyu123/MPGSurv/main/framework.png">
 
 
 ## Setup
