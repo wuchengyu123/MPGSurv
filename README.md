@@ -2,7 +2,7 @@
 
 ## A Quick Overview 
 
-<img width="600" height="400" src="./framework.png">
+<img width="600" height="450" src="./framework.png">
 
 
 ## Setup
