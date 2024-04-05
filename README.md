@@ -16,9 +16,9 @@
   
 ``conda env create -f environment.yml``
 
-## Training and Evaluation
+## Proposed Model
 
-The training and evaluation code can be overviewed in  ``main.py``. The code of proposed model can be seen in  ``/model``.
+The code of proposed model can be seen in  ``/model``.
 
 ## Dataset
 
