@@ -27,8 +27,6 @@ columns = Xy_data.columns
 X = Xy_data.drop(columns=['IBEX_CT_NAME','PatientID','OStime','OSstatue','PFStime','PFSstatue'])
 y = Xy_data.loc[:,['IBEX_CT_NAME','PatientID','OStime','OSstatue','PFStime','PFSstatue']]
 
-
-
 for seed in random_seeds:
 
     print(f'random seed:{seed}')
