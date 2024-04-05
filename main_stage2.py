@@ -34,24 +34,17 @@ for seed in random_seeds:
     print(f'random seed:{seed}')
     l1 = 0.5
 
-    X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2,random_state=seed)
-    train = pd.concat([y_train,X_train],axis=1)
-    test = pd.concat([y_test,X_test],axis=1)
-
-    train_data = pd.DataFrame(train.values,columns=train.columns)
-    test_data = pd.DataFrame(test.values,columns=test.columns)
-
     train_set = CustomDataSet(
         csv_data=train_data,
         csv_data_col_names=csv_data_col_names,
     )
 
-    test_set = CustomDataSet(
-        csv_data=test_data,
+    valid_set = CustomDataSet(
+        csv_data=valid_data,
         csv_data_col_names=csv_data_col_names,
     )
     train_loader = DataLoader(dataset=train_set, batch_size=batch_size, shuffle=True)
-    test_loader = DataLoader(dataset=test_set, batch_size=batch_size, shuffle=True)
+    test_loader = DataLoader(dataset=valid_set, batch_size=batch_size, shuffle=True)
 
     file_paths = {'feature':'./CBAM feature_vector/feature_seed{}.txt'.format(seed),'cite':'./CBAM feature_vector/cite_all_reID.txt'}
     datacenter = DataCenter(file_paths)
