@@ -57,8 +57,6 @@ for seed in random_seeds:
     train_loader = DataLoader(dataset=train_set, batch_size=batch_size, shuffle=False)
     valid_loader = DataLoader(dataset=valid_set, batch_size=batch_size, shuffle=False)
 
-
-
     lr = 1e-5 # 1e-5
     model= ResNet_Linformer().to(device)
     optimizer = torch.optim.Adam(model.parameters(),lr=lr,weight_decay=5e-4)
